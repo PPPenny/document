@@ -10,7 +10,9 @@ _.findWhere(data,{查询条件});     返回符合条件的对象{}
 
 _.where(data,{查询条件});             返回一个数组对象[{},{}]
 
-_.pick(obj,key1,key2);                    从对象中返回需要的key重组新对象，如果不存在key，则不返回
+_.pick(obj,key1,key2);                    从对象中返回需要的key重组新对象，如果不存在key，则返回{}
+
+
 
 
 
@@ -56,4 +58,10 @@ router:根据路径找到对应组件，并渲染的过程称为路由
 
 字符串拼接:  {'string'+this.var}      string :表示原本的字符串，this.var表示变量
 
- 
+字符模板 ``,中间包含变量则：${var} 表示
+
+ **for...in语句**以任意顺序遍历一个对象的[可枚举属性](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)。对于每个不同的属性，语句都会被执行。
+
+
+
+for in遍历的是数组的索引，而for of遍历的是数组元素值
